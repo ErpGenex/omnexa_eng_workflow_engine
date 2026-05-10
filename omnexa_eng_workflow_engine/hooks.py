@@ -8,7 +8,8 @@ app_license = "mit"
 # Apps
 # ------------------
 
-required_apps = ["omnexa_engineering_consulting"]
+# Must not depend on omnexa_engineering_consulting here — that app lists us in required_apps (avoid install cycle).
+required_apps = ["omnexa_core", "omnexa_projects_pm"]
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
